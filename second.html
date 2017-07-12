@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>我的第二篇博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="https://typo.sofi.sh/typo.css">
+  <style>
+    body{
+      padding: 16px;
+      background:rgba(220,1,65,0.5)
+    }
+    img{
+      max-width:100%
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+
+__海底月是天上月，眼前人是心上人。__
+__向来心是看客心，奈何人是心上人。__
+  </div>
+</body>
+  
+  <script>
+    var content =document.getElementById('content')
+    var markdown=content.innerHTML
+    var html=marked(markdown)
+    content.innerHTML=html
+    console.log(markdown)
+  </script>
+</html>
